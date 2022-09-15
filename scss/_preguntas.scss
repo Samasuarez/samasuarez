@@ -1,0 +1,20 @@
+.gridPreguntas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "accordion accordion" "textoForm form";
+}
+.textoPreguntas {
+  padding: 50px;
+  padding-bottom: 0;
+}
+.accordionStyle {
+  grid-area: accordion;
+  padding: 50px;
+}
+.texto p {
+  padding: 30px 15px;
+  margin: 0;
+  background-color: $color-letra;
+  margin-right: 50px;
+}

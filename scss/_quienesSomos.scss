@@ -1,0 +1,17 @@
+.bgImgContacto {
+  height: 100%;
+  background-image: url("../img/fotovintage2.jpg");
+}
+.textoNosotros {
+  text-align: center;
+  background-color: $color-secundario;
+  margin: 0;
+  margin-right: 50px;
+  padding-top: 30px;
+}
+.gridQuienesSomos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "imgAnimate texto" "textoForm form";
+}

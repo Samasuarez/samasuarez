@@ -1,0 +1,9 @@
+@mixin row-center-flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+@mixin bgColor-color {
+  background-color: #804851;
+  color: #ffe4c4;
+}

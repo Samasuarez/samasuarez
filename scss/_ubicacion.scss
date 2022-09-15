@@ -1,0 +1,31 @@
+.gridUbicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "imgUbic imgUbic" "textoUbicacion textoUbicacion" "mapaUbicacion mapaUbicacion" "textoForm form";
+}
+.mapaUbicacion {
+  grid-area: mapaUbicacion;
+  width: 100%;
+  height: 450px;
+}
+.imgUbic {
+  grid-area: imgUbic;
+  background-image: url("../img/moda.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none !important;
+  display: block;
+  padding: 50px;
+}
+.textoUbicacion {
+  grid-area: textoUbicacion;
+  @include row-center-flex;
+  color: $color-letra;
+  padding: 0 10%;
+  height: 300px;
+  font-size: 26px;
+}

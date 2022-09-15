@@ -1,0 +1,30 @@
+.navbarStyles {
+  background-color: $color-principal;
+}
+.navbarStyles a {
+  color: white;
+}
+
+.imgAnimate {
+  grid-area: imgAnimate;
+  padding: 100px;
+}
+
+.gridHome {
+  display: grid;
+  grid-template-areas:
+    "headerHome"
+    "mainHome"
+    "footerHome";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+
+.headerGrid {
+  grid-area: headerHome;
+}
+
+.mainGrid {
+  grid-area: mainHome;
+  background-color: $color-primario;
+}

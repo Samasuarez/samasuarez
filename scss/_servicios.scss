@@ -1,0 +1,65 @@
+.imgCard {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.textoServ {
+  @extend .imgCard;
+  position: absolute;
+  z-index: 5;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.imgCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgServicios1 {
+  grid-area: imgServicios1;
+}
+
+.imgServicios2 {
+  grid-area: imgServicios2;
+}
+
+.imgServicios3 {
+  grid-area: imgServicios3;
+}
+
+.imgServicios4 {
+  grid-area: imgServicios4;
+}
+
+.imgServicios5 {
+  grid-area: imgServicios5;
+}
+
+.imgServicios6 {
+  grid-area: imgServicios6;
+}
+
+.tituloServicios {
+  grid-area: tituloServicios;
+  @include row-center-flex;
+  height: 90px;
+  color: $color-terciario;
+}
+.gridServicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "tituloServicios tituloServicios" "imgServicios1 imgServicios2" "imgServicios3 imgServicios4" "imgServicios5 imgServicios6" "textoForm form";
+}

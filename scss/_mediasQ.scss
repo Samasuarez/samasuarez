@@ -1,0 +1,94 @@
+@media only screen and (max-width: 820px) {
+  .gridContainerUbicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "textoUbicacion1 textoUbicacion1"
+      "imgPrincipalUbi imgPrincipalUbi"
+      "textoUbicacion2 textoUbicacion2"
+      "mapaUbicacion mapaUbicacion"
+      "textoForm textoForm"
+      "form form";
+  }
+
+  .gridUbicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "textoUbicacion textoUbicacion"
+      "mapaUbicacion mapaUbicacion"
+      "textoForm textoForm"
+      "form form";
+  }
+  .gridServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "tituloServicios tituloServicios"
+      "imgServicios1 imgServicios1"
+      "imgServicios2 imgServicios2"
+      "imgServicios3 imgServicios3"
+      "imgServicios4 imgServicios4"
+      "imgServicios5 imgServicios5"
+      "imgServicios6 imgServicios6"
+      "textoForm textoForm"
+      "form form";
+  }
+
+  .gridQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "img texto"
+      "textoForm textoForm"
+      "form form";
+  }
+
+  .gridPreguntas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "accordion accordion"
+      "textoForm textoForm"
+      "form form";
+  }
+}
+@media only screen and (max-width: 520px) {
+  .textoUbicacion {
+    grid-area: textoUbicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c514c;
+    padding: 10%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .gridQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "img img"
+      "texto texto"
+      "textoForm textoForm"
+      "form form";
+  }
+  .texto p {
+    padding: 30px 15px;
+    margin: 0;
+    background-color: bisque;
+    margin: 0 5%;
+  }
+  .textoNosotros {
+    text-align: center;
+    background-color: bisque;
+    margin: 0 5%;
+    padding-top: 30px;
+  }
+}

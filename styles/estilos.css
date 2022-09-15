@@ -1,0 +1,285 @@
+.navbarStyles {
+  background-color: #804851; }
+
+.navbarStyles a {
+  color: white; }
+
+.imgAnimate {
+  grid-area: imgAnimate;
+  padding: 100px; }
+
+.gridHome {
+  display: grid;
+  grid-template-areas: "headerHome" "mainHome" "footerHome";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto); }
+
+.headerGrid {
+  grid-area: headerHome; }
+
+.mainGrid {
+  grid-area: mainHome;
+  background-color: #fff2e3; }
+
+.footerGrid {
+  grid-area: footerHome; }
+
+footer {
+  align-items: center;
+  display: flex;
+  background-color: #804851;
+  padding: 60px 0;
+  padding-top: 0;
+  color: #ffe4c4; }
+
+hr {
+  border: 1px solid #ffe4c4;
+  opacity: 1;
+  margin: 25px 0; }
+
+.textoForm {
+  grid-area: textoForm;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #804851;
+  color: #ffe4c4;
+  height: 100%;
+  padding: 70px 10%; }
+
+.form {
+  grid-area: form;
+  padding: 40px 10%;
+  background-color: #804851;
+  color: #ffe4c4; }
+
+form {
+  width: 500px; }
+
+textarea {
+  height: 150px; }
+
+.textoUbicacion1 p,
+.textoUbicacion2 p {
+  font-size: 24px;
+  color: #2c514c; }
+
+.imgPrincipalUbi {
+  grid-area: imgPrincipalUbi;
+  background-image: url("../img/fashion.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none !important; }
+
+.gridContainerUbicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "textoUbicacion1 textoUbicacion1" "imgPrincipalUbi imgPrincipalUbi" "textoUbicacion2 textoUbicacion2" "textoForm form"; }
+
+.textoUbicacion {
+  grid-area: textoUbicacion;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #2c514c;
+  padding: 0 10%;
+  height: 300px;
+  font-size: 26px; }
+
+.textoUbicacion1 {
+  grid-area: textoUbicacion1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 70px 10%; }
+
+.textoUbicacion2 {
+  grid-area: textoUbicacion2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 70px 10%; }
+
+.gridPreguntas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "accordion accordion" "textoForm form"; }
+
+.textoPreguntas {
+  padding: 50px;
+  padding-bottom: 0; }
+
+.accordionStyle {
+  grid-area: accordion;
+  padding: 50px; }
+
+.texto p {
+  padding: 30px 15px;
+  margin: 0;
+  background-color: #2c514c;
+  margin-right: 50px; }
+
+.bgImgContacto {
+  height: 100%;
+  background-image: url("../img/fotovintage2.jpg"); }
+
+.textoNosotros {
+  text-align: center;
+  background-color: #ffe4c4;
+  margin: 0;
+  margin-right: 50px;
+  padding-top: 30px; }
+
+.gridQuienesSomos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "imgAnimate texto" "textoForm form"; }
+
+.gridUbicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "imgUbic imgUbic" "textoUbicacion textoUbicacion" "mapaUbicacion mapaUbicacion" "textoForm form"; }
+
+.mapaUbicacion {
+  grid-area: mapaUbicacion;
+  width: 100%;
+  height: 450px; }
+
+.imgUbic {
+  grid-area: imgUbic;
+  background-image: url("../img/moda.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none !important;
+  display: block;
+  padding: 50px; }
+
+.textoUbicacion {
+  grid-area: textoUbicacion;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #2c514c;
+  padding: 0 10%;
+  height: 300px;
+  font-size: 26px; }
+
+@media only screen and (max-width: 820px) {
+  .gridContainerUbicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "textoUbicacion1 textoUbicacion1" "imgPrincipalUbi imgPrincipalUbi" "textoUbicacion2 textoUbicacion2" "mapaUbicacion mapaUbicacion" "textoForm textoForm" "form form"; }
+  .gridUbicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "textoUbicacion textoUbicacion" "mapaUbicacion mapaUbicacion" "textoForm textoForm" "form form"; }
+  .gridServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "tituloServicios tituloServicios" "imgServicios1 imgServicios1" "imgServicios2 imgServicios2" "imgServicios3 imgServicios3" "imgServicios4 imgServicios4" "imgServicios5 imgServicios5" "imgServicios6 imgServicios6" "textoForm textoForm" "form form"; }
+  .gridQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "img texto" "textoForm textoForm" "form form"; }
+  .gridPreguntas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "accordion accordion" "textoForm textoForm" "form form"; } }
+
+@media only screen and (max-width: 520px) {
+  .textoUbicacion {
+    grid-area: textoUbicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c514c;
+    padding: 10%;
+    height: 100%;
+    font-size: 16px; }
+  .gridQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "img img" "texto texto" "textoForm textoForm" "form form"; }
+  .texto p {
+    padding: 30px 15px;
+    margin: 0;
+    background-color: bisque;
+    margin: 0 5%; }
+  .textoNosotros {
+    text-align: center;
+    background-color: bisque;
+    margin: 0 5%;
+    padding-top: 30px; } }
+
+.imgCard, .textoServ {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  overflow: hidden !important;
+  position: relative; }
+
+.textoServ {
+  position: absolute;
+  z-index: 5;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.imgCard img, .textoServ img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.imgServicios1 {
+  grid-area: imgServicios1; }
+
+.imgServicios2 {
+  grid-area: imgServicios2; }
+
+.imgServicios3 {
+  grid-area: imgServicios3; }
+
+.imgServicios4 {
+  grid-area: imgServicios4; }
+
+.imgServicios5 {
+  grid-area: imgServicios5; }
+
+.imgServicios6 {
+  grid-area: imgServicios6; }
+
+.tituloServicios {
+  grid-area: tituloServicios;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 90px;
+  color: bisque; }
+
+.gridServicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "tituloServicios tituloServicios" "imgServicios1 imgServicios2" "imgServicios3 imgServicios4" "imgServicios5 imgServicios6" "textoForm form"; }

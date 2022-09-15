@@ -1,0 +1,46 @@
+.textoUbicacion1 p,
+.textoUbicacion2 p {
+  font-size: 24px;
+  color: $color-letra;
+}
+
+.imgPrincipalUbi {
+  grid-area: imgPrincipalUbi;
+  background-image: url("../img/fashion.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none !important;
+}
+.gridContainerUbicacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "textoUbicacion1 textoUbicacion1" "imgPrincipalUbi imgPrincipalUbi" "textoUbicacion2 textoUbicacion2" "textoForm form";
+}
+.textoUbicacion {
+  grid-area: textoUbicacion;
+  @include row-center-flex;
+  color: $color-letra;
+  padding: 0 10%;
+  height: 300px;
+  font-size: 26px;
+}
+
+.textoUbicacion1 {
+  grid-area: textoUbicacion1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 70px 10%;
+}
+
+.textoUbicacion2 {
+  grid-area: textoUbicacion2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 70px 10%;
+}

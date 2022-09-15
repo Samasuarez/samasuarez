@@ -1,0 +1,46 @@
+.footerGrid {
+  grid-area: footerHome;
+}
+$estilos: (
+  centro: center,
+  displayF: flex,
+  bGcolor: $color-principal,
+  paddinG: 60px 0,
+  paddingTop: 0,
+  color: $color-secundario,
+);
+
+footer {
+  align-items: map-get($estilos, centro);
+  display: map-get($estilos, displayF);
+  background-color: map-get($estilos, bGcolor);
+  padding: map-get($estilos, paddinG);
+  padding-top: map-get($estilos, paddingTop);
+  color: map-get($estilos, color);
+}
+
+hr {
+  border: 1px solid $color-secundario;
+  opacity: 1;
+  margin: 25px 0;
+}
+.textoForm {
+  grid-area: textoForm;
+  @include row-center-flex;
+  @include bgColor-color;
+  height: 100%;
+  padding: 70px 10%;
+}
+.form {
+  grid-area: form;
+  padding: 40px 10%;
+  @include bgColor-color;
+}
+
+form {
+  width: 500px;
+}
+
+textarea {
+  height: 150px;
+}
