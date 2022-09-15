@@ -14,8 +14,8 @@
   position: relative;
 }
 
-.textoServ {
-  @extend .imgCard;
+.imgCard p{
+  // @extend .imgCard;
   position: absolute;
   z-index: 5;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -55,7 +55,7 @@
   grid-area: tituloServicios;
   @include row-center-flex;
   height: 90px;
-  color: $color-terciario;
+  color: $color-letra;
 }
 .gridServicios {
   display: grid;

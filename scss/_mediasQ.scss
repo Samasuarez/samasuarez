@@ -17,6 +17,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
+      "imgUbic imgUbic"
       "textoUbicacion textoUbicacion"
       "mapaUbicacion mapaUbicacion"
       "textoForm textoForm"
@@ -43,7 +44,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
-      "img texto"
+      "imgAnimate imgAnimate"
+      "texto texto"
       "textoForm textoForm"
       "form form";
   }
@@ -56,6 +58,26 @@
       "accordion accordion"
       "textoForm textoForm"
       "form form";
+  }
+
+  .texto {
+    grid-area: texto;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px;
+  }
+  .texto p {
+    padding: 30px 15px;
+    margin: 0;
+    background-color: bisque;
+    margin: 0 5%;
+  }
+  .textoNosotros {
+    text-align: center;
+    background-color: bisque;
+    margin: 0 5%;
+    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -74,7 +96,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
-      "img img"
+      "imgAnimate imgAnimate"
       "texto texto"
       "textoForm textoForm"
       "form form";

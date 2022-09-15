@@ -15,3 +15,16 @@
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas: "imgAnimate texto" "textoForm form";
 }
+.texto {
+  grid-area: texto;
+  align-items: center;
+  height: 100%;
+  display: block;
+  padding-top: 100px;
+}
+.texto p {
+  padding: 30px 15px;
+  margin: 0;
+  background-color: bisque;
+  margin-right: 50px;
+}
