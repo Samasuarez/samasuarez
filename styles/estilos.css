@@ -92,15 +92,17 @@ textarea {
 
 .textoUbicacion1 {
   grid-area: textoUbicacion1;
-  display: flex;
   align-items: center;
+  justify-content: center;
+  display: flex;
   height: 100%;
   padding: 70px 10%; }
 
 .textoUbicacion2 {
   grid-area: textoUbicacion2;
-  display: flex;
   align-items: center;
+  justify-content: center;
+  display: flex;
   height: 100%;
   padding: 70px 10%; }
 
@@ -212,23 +214,31 @@ textarea {
   width: 100%;
   object-fit: cover; }
 
-.imgServicios1 {
-  grid-area: imgServicios1; }
+.imgAnimation {
+  transform: scale(1);
+  transition: 4s; }
 
-.imgServicios2 {
-  grid-area: imgServicios2; }
+.imgAnimation:hover {
+  transform: scale(1.2);
+  transition: 4s; }
 
-.imgServicios3 {
-  grid-area: imgServicios3; }
+.imgServicios-1 {
+  grid-area: imgServicios; }
 
-.imgServicios4 {
-  grid-area: imgServicios4; }
+.imgServicios-2 {
+  grid-area: imgServicios; }
 
-.imgServicios5 {
-  grid-area: imgServicios5; }
+.imgServicios-3 {
+  grid-area: imgServicios; }
 
-.imgServicios6 {
-  grid-area: imgServicios6; }
+.imgServicios-4 {
+  grid-area: imgServicios; }
+
+.imgServicios-5 {
+  grid-area: imgServicios; }
+
+.imgServicios-6 {
+  grid-area: imgServicios; }
 
 .tituloServicios {
   grid-area: tituloServicios;
@@ -257,6 +267,7 @@ textarea {
     grid-template-areas: "imgUbic imgUbic" "textoUbicacion textoUbicacion" "mapaUbicacion mapaUbicacion" "textoForm textoForm" "form form"; }
   .gridServicios {
     display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "tituloServicios tituloServicios" "imgServicios1 imgServicios1" "imgServicios2 imgServicios2" "imgServicios3 imgServicios3" "imgServicios4 imgServicios4" "imgServicios5 imgServicios5" "imgServicios6 imgServicios6" "textoForm textoForm" "form form"; }

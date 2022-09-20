@@ -31,16 +31,14 @@
 
 .textoUbicacion1 {
   grid-area: textoUbicacion1;
-  display: flex;
-  align-items: center;
+  @include row-center-flex;
   height: 100%;
   padding: 70px 10%;
 }
 
 .textoUbicacion2 {
   grid-area: textoUbicacion2;
-  display: flex;
-  align-items: center;
+  @include row-center-flex;
   height: 100%;
   padding: 70px 10%;
 }
