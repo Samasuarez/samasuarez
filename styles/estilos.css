@@ -267,7 +267,6 @@ textarea {
     grid-template-areas: "imgUbic imgUbic" "textoUbicacion textoUbicacion" "mapaUbicacion mapaUbicacion" "textoForm textoForm" "form form"; }
   .gridServicios {
     display: grid;
-    display: block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "tituloServicios tituloServicios" "imgServicios1 imgServicios1" "imgServicios2 imgServicios2" "imgServicios3 imgServicios3" "imgServicios4 imgServicios4" "imgServicios5 imgServicios5" "imgServicios6 imgServicios6" "textoForm textoForm" "form form"; }
