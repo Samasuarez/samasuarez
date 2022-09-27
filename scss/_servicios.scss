@@ -35,8 +35,8 @@
   transition: 4s;
 }
 @for $i from 1 through 6 {
-  .imgServicios-#{$i} {
-    grid-area: imgServicios;
+  .imgServicios#{$i} {
+    grid-area: imgServicios#{$i};
   }
 }
 .tituloServicios {
