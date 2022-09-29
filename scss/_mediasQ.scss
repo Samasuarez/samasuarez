@@ -44,8 +44,8 @@
     grid-template-areas:
       "imgAnimate imgAnimate"
       "texto texto"
-      "texto2 texto2"
       "imgAnimate2 imgAnimate2"
+      "texto2 texto2"
       "textoForm textoForm"
       "form form";
   }
@@ -59,12 +59,19 @@
       "form form";
   }
 
-  .texto .texto2 {
+  .texto {
     grid-area: texto;
     align-items: center;
     height: 100%;
     display: block;
-    padding: 50px;
+    padding: 50px 0;
+  }
+  .texto2 {
+    grid-area: texto2;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0;
   }
 
   .texto p {
@@ -137,6 +144,20 @@
       "textoForm textoForm"
       "form form";
   }
+  .texto {
+    grid-area: texto;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0;
+  }
+  .texto2 {
+    grid-area: texto2;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0;
+  }
   .texto p {
     padding: 30px 15px;
     margin: 0;
@@ -184,9 +205,11 @@
   }
   .imgAnimate {
     grid-area: imgAnimate;
+    padding: 0;
   }
   .imgAnimate2 {
     grid-area: imgAnimate2;
+    padding: 0;
   }
   .imgAnim {
     width: 100%;

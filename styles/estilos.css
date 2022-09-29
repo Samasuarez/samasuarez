@@ -171,11 +171,11 @@ textarea {
 
 .imgAnimate {
   grid-area: imgAnimate;
-  padding: 100px; }
+  padding: 100px 10%; }
 
 .imgAnimate2 {
   grid-area: imgAnimate2;
-  padding: 100px; }
+  padding: 100px 10%; }
 
 .imgAnim {
   width: 100%; }
@@ -188,8 +188,7 @@ textarea {
   padding-top: 100px; }
 
 .imgAnim {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .gridUbicacion {
   display: grid;
@@ -309,18 +308,24 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "imgAnimate imgAnimate" "texto texto" "texto2 texto2" "imgAnimate2 imgAnimate2" "textoForm textoForm" "form form"; }
+    grid-template-areas: "imgAnimate imgAnimate" "texto texto" "imgAnimate2 imgAnimate2" "texto2 texto2" "textoForm textoForm" "form form"; }
   .gridPreguntas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "accordion accordion" "textoForm textoForm" "form form"; }
-  .texto .texto2 {
+  .texto {
     grid-area: texto;
     align-items: center;
     height: 100%;
     display: block;
-    padding: 50px; }
+    padding: 50px 0; }
+  .texto2 {
+    grid-area: texto2;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0; }
   .texto p {
     padding: 30px 15px;
     margin: 0;
@@ -376,6 +381,18 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "imgAnimate imgAnimate" "texto texto" "imgAnimate2 imgAnimate2" "texto2 texto2" "textoForm textoForm" "form form"; }
+  .texto {
+    grid-area: texto;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0; }
+  .texto2 {
+    grid-area: texto2;
+    align-items: center;
+    height: 100%;
+    display: block;
+    padding: 50px 0; }
   .texto p {
     padding: 30px 15px;
     margin: 0;
@@ -416,8 +433,10 @@ textarea {
     display: block;
     padding: 50px; }
   .imgAnimate {
-    grid-area: imgAnimate; }
+    grid-area: imgAnimate;
+    padding: 0; }
   .imgAnimate2 {
-    grid-area: imgAnimate2; }
+    grid-area: imgAnimate2;
+    padding: 0; }
   .imgAnim {
     width: 100%; } }
