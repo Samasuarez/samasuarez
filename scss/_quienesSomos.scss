@@ -2,6 +2,7 @@
   height: 100%;
   background-image: url("../img/fotovintage2.jpg");
 }
+
 .textoNosotros {
   text-align: center;
   background-color: $color-secundario;
@@ -9,11 +10,21 @@
   margin-right: 50px;
   padding-top: 30px;
 }
+.textoNosotros2 {
+  text-align: center;
+  background-color: #ffe4c4;
+  margin: 0;
+  margin-left: 50px;
+  padding-top: 30px;
+}
 .gridQuienesSomos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "imgAnimate texto" "textoForm form";
+  grid-template-areas:
+    "imgAnimate texto"
+    "texto2 imgAnimate2"
+    "textoForm form";
 }
 .texto {
   grid-area: texto;
@@ -27,4 +38,34 @@
   margin: 0;
   background-color: bisque;
   margin-right: 50px;
+}
+.texto2 p {
+  padding: 30px 15px;
+  margin: 0;
+  background-color: bisque;
+  margin-left: 50px;
+}
+.imgAnimate {
+  grid-area: imgAnimate;
+
+  padding: 100px;
+}
+.imgAnimate2 {
+  grid-area: imgAnimate2;
+ 
+  padding: 100px;
+}
+.imgAnim{
+  width: 100%;
+}
+.texto2 {
+  grid-area: texto2;
+  align-items: center;
+  height: 100%;
+  display: block;
+  padding-top: 100px;
+}
+.imgAnim{
+  width: 100%;
+  height: 100%;
 }
