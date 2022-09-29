@@ -349,4 +349,15 @@ textarea {
   .textoUbicacion1 p,
   .textoUbicacion2 p {
     font-size: 18px;
-    color: #2c514c; } }
+    color: #2c514c; }
+  .imgUbic {
+    grid-area: imgUbic;
+    background-image: url("../img/moda.jpg");
+    min-height: 350px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none !important;
+    display: block;
+    padding: 50px; } }

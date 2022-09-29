@@ -140,4 +140,16 @@
     font-size: 18px;
     color: $color-letra;
   }
+  .imgUbic {
+    grid-area: imgUbic;
+    background-image: url("../img/moda.jpg");
+    min-height: 350px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none !important;
+    display: block;
+    padding: 50px;
+  }
 }
