@@ -33,6 +33,7 @@
 .imgAnimation:hover {
   transform: scale(1.2);
   transition: 4s;
+  filter: sepia(100%);
 }
 @for $i from 1 through 6 {
   .imgServicios#{$i} {

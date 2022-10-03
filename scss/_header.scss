@@ -1,5 +1,8 @@
 .navbarStyles {
   background-color: $color-principal;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 .navbarStyles a {
   color: white;
@@ -27,4 +30,5 @@
 .mainGrid {
   grid-area: mainHome;
   background-color: $color-primario;
+  padding-top: 56px;
 }
