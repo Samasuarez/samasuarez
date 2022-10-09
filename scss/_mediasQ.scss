@@ -131,6 +131,10 @@
     font-weight: 900;
     font-family: Andale Mono, monospace;
   }
+  .accordionStyle {
+    grid-area: accordion;
+    padding: 50px 5% 100px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -238,5 +242,9 @@
     color: white;
     font-weight: 900;
     font-family: Andale Mono, monospace;
+  }
+  .accordionStyle {
+    grid-area: accordion;
+    padding: 50px 2% 100px;
   }
 }
