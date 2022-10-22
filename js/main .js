@@ -29,15 +29,16 @@ function pedirMientrasQueTengaValor(consulta) {
   return valor;
 }
 const cambiarDePlan = function () {
-  let cambioPlan = prompt("Elegi tu nuevo plan (8gb, 15gb, 25gb)");
-  while (cambioPlan == "8gb" && cambioPlan == "15gb" && cambioPlan == "25gb") {
+  let cambioPlan = prompt("Elegi tu nuevo plan (8gb, 15gb, 25gb)").toLowerCase();
+  while (cambioPlan != "8gb" && cambioPlan != "15gb" && cambioPlan != "25gb") {
+    cambioPlan = prompt("Por favor elige una opcion valida (8gb, 15gb, 25gb)").toLowerCase();
   }
-  if(cambioPlan){
-    alert("cambiaste tu plan a: " + cambioPlan); 
-  }else{
-    prompt ("Ingresa una opcion valida" + cambiarDePlan)
+  console.log(cambioPlan);
+  if (cambioPlan) {
+    alert("cambiaste tu plan a: " + cambioPlan);
   }
 };
+
 const ingresarPagoWhile = function () {
   let medioPago = prompt(
     "Elegi un metodo de pago (debito, credito o transferencia)"
