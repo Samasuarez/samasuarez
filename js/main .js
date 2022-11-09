@@ -11,7 +11,12 @@ const ingresoEdad = function () {
 };
 // ingresoEdad()
 const servicios = [
-  { id: 1, nombre: "higiene y confort", cuidado: "enfermeria/auxiliar", precio: 3000 },
+  {
+    id: 1,
+    nombre: "higiene y confort",
+    cuidado: "enfermeria/auxiliar",
+    precio: 3000,
+  },
   {
     id: 2,
     nombre: "cambio de sonda vesical",
@@ -73,45 +78,41 @@ function buscarPorCuidado(arr, filtro) {
 
 // console.log(cuidadoEncontrado)
 // console.log(servicioEncontrado);
-function filtrarPorPrecio(arr, filtro) {
-  return arr.filter((servicio) => {
-    return servicio.precio <= filtro;
-  });
-}
+let filtrarPorPrecio = (arr, filtro) =>
+ arr.filter((servicio) => servicio.precio <= filtro);
+
 const menorPrecio = filtrarPorPrecio(servicios, 1000);
 console.log(menorPrecio);
 const compras = [];
 let servicioEncontrado = buscarServicio(servicios, "via de hidratacion");
 let cuidadoEncontrado = buscarPorCuidado(servicios, "acomp");
-console.log(compras);
 cargarServicio(compras, servicioEncontrado);
 cargarServicio(compras, cuidadoEncontrado);
+console.log(compras);
+// function calcularPrecio(acc, el) {
+//   return compras.reduce;
+// }
+// function calcularPrecio
+let calcularPrecio = compras.reduce((acc, el) => {
+  return acc + el.precio;
+}, 0);
+console.log(calcularPrecio);
 
 
+// let calculaPrecio = (datos) =>
+//   datos.reduce((acc, el) => {
+//     return acc + el.precio;
+//   }, 0);
+// console.log(calculaPrecio(compras));
+// let calculaPrecio2 = (datos) => {
+//   return datos.reduce((acc, el) => {
+//     return acc + el.precio;
+//   }, 0);
+// };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const filtra = (arr, filtro,param)=>{
+//   return arr.filter
+// }
 
 // console.log(nuevoServicio)
 
